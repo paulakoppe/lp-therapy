@@ -1,11 +1,16 @@
 body {
   margin: 0px;
   min-height: 100vh;
+
 }
 
-header img {
-  height: 80px; 
-  margin: 60px 40px;
+:root {
+  font-size: 62.5%;
+}
+
+#logo   {
+  height: 8rem; 
+  margin: 6rem 4rem;
 }
 
 header {
@@ -15,9 +20,9 @@ header {
 }
 
 .page {
-  width: 1500px;
+  width: 150rem;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-top: .5rem;
 
 }
 
@@ -28,46 +33,46 @@ main {
 
 h1 {
   font-family: "Fjalla One", sans-serif;
-  margin-top: 60px;
-  font-size: 50px;
-  line-height: 86px;
+  margin-top: 6rem;
+  font-size: 5rem;
+  line-height: 8.6rem;
   color: #151718; 
 }
 
 .text {
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin: 1rem;
 }
 
 h4 {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
-  margin-top: 30px;
-  font-size: 40px;
+  margin-top: 3rem;
+  font-size: 4rem;
 }
 
 .description {
   font-family: "Tajawal", sans-serif;
-  margin-top: 20px;
+  margin-top: 2rem;
   color: black;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .list {
   font-family: "Tajawal", sans-serif;
-  margin-top: 20px;
+  margin-top: 2rem;
   color: black;
-  font-size: 18px;
-  max-width: 1000px;
+  font-size: 1.8rem;
+  max-width: 100rem;
 }
 
 ul {
   display: flex;
   font-family: "Tajawal", sans-serif;
   color: black;
-  font-size: 18px;
-  gap: 48px;
+  font-size: 1.8rem;
+  gap: 4.8rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -76,41 +81,89 @@ ul {
 
 h2 {
   font-family: "Space Grotesk", sans-serif;
-  margin-top: 50px;
-  font-size: 20px;
-  line-height: 24px;
+  margin-top: 5rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
   color: #2c2e2f;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 h3 {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   color: #2c2e2f;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .menu a {
   font-family: "Space Grotesk", sans-serif;
-  padding: 10px;
+  padding: 1rem;
   color: #151718;
   text-decoration: none;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
+
 
 a:hover {
   background: #cebaee;
-  border-radius: 30px;
+  border-radius: 3rem;
   color: black;
+  transition: .2s;
 }
 
 footer {
   font-family: "Space Grotesk", sans-serif;
   display: fixed;
-  font-size: 12px; 
-  line-height: 28px; 
+  font-size: 1.2rem; 
+  line-height: 2.8rem; 
+  margin-top: 1rem;
   bottom: 0;
   left: 0;
 }
+
+@media (max-width:700px) {
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-left: 25%;
+} 
+  
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  max-width: 20rem;
+  line-height: 4.6rem;
+  overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
+}
+
+#logo {
+  margin: 10rem 2rem;
+}
+
+.text {
+  max-width: 30rem;
+}
+
+ul {
+display: block;
+list-style: inside;
+}
+
+#face {
+  display: none;
+}
+
+footer {
+  margin-top: 5rem;
+}
+} 
