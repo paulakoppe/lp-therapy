@@ -1,4 +1,4 @@
-<h1 align="center"> Help center ✨ </h1>
+<h1 align="center"> help center ✨ </h1>
 
 💻 Project
 
